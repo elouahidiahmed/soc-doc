@@ -13,10 +13,10 @@
 ## Table des matières
 1. [Description de la solution Microsoft Entra ID](#1-description-de-la-solution-microsoft-entra-id)   
 2. [ Prérequis ](#2-prérequis) 
-3. [Types de données du connecteur de données Microsoft Entra ID](#3-types-de-données-du-connecteur-de-données-microsoft-entra-id)  	
-4. [Étapes d’installation](#4-étapes-dinstallation)  
+3. [Types de journaux Microsoft Entra ID](#3-types-de-journaux-microsoft-entra-id)  	
+4. [Installation de la solution](#4-installation-de-la-solution)  
 5. [Activation du connecteur](#5-activation-du-connecteur)  
-6. [ Validation ](#6-validation)
+6. [Validation de la réception des journaux](#6-validation-de-la-réception-des-journaux)
 7. [Sources](#7-sources) 
 
 <br>
@@ -26,7 +26,9 @@
 ## 1. Description de la solution Microsoft Entra ID  
 La solution Microsoft Entra ID pour Microsoft Sentinel permet d’ingérer, via les paramètres de diagnostic, les journaux Microsoft Entra ID suivants dans Microsoft Sentinel : Audit, Connexions (Sign-in), Provisionnement, Événements de risque et Utilisateurs/Principaux de service à risque.
 
-### Contenu de la solution Microsoft Entra ID :  
+### Contenu de la solution Microsoft Entra ID : 
+L'installation de la solution Microsoft Entra ID dans Sentinel permet d'ajouter les composantes suivantes à l'interface de Sentinel:  
+
     Data Connectors: 1 
     Workbooks: 2   
     Analytic Rules: 63   
@@ -43,7 +45,7 @@ La solution Microsoft Entra ID pour Microsoft Sentinel permet d’ingérer, via 
 - Votre utilisateur doit disposer d’autorisations en lecture et en écriture sur les paramètres de diagnostic Microsoft Entra pour pouvoir voir l’état de la connexion. 
 
 
-## 3. Types de données du connecteur de données Microsoft Entra ID  	
+## 3. Types de journaux Microsoft Entra ID 	
 Ce tableau répertorie les journaux que vous pouvez envoyer depuis Microsoft Entra ID vers Microsoft Sentinel en utilisant le connecteur de données Microsoft Entra ID. Microsoft Sentinel stocke ces journaux dans l’espace de travail Log Analytics lié à votre espace de travail Microsoft Sentinel. 
 
 
@@ -68,7 +70,7 @@ Ce tableau répertorie les journaux que vous pouvez envoyer depuis Microsoft Ent
 
 
 
-## 4. Étapes d’installation   
+## 4. Installation de la solution  
 Le connecteur n’est pas installé par défaut, mais il est inclus dans la solution Microsoft Entra ID qui est fournie par Microsoft dans le Content Hub de Sentinel. Les solutions incluses dans Content Hub ont besoin d’être d’installées pour qu’elles puissent être utilisées dans Sentinel. Pour installer la solution Microsoft Entra ID et activer le connecteur, veuillez suivre les étapes suivantes:
 - Depuis le portail Azure, allez dans Sentinel, sélectionnez le workspace cible. 
 - Allez dans : Sentinel > Gestion de contenu > Content Hub, 
@@ -110,7 +112,7 @@ Afin de pouvoir configurer le connecteur, veuillez suivre les étapes suivantes:
 ![alt text](images/règle-diagnostic-setting-entraid.png)
 
 
-## 6. Validation   
+## 6. Validation de la réception des journaux  
 
 ### Méthode 1 : 
 Depuis Sentinel > Configuration > Connecteurs de données, On peut afficher les statistiques des données ingérés en cliquant le connecteur : Microsoft Entra ID.
