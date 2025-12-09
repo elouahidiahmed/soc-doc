@@ -34,7 +34,7 @@ La solution Microsoft Entra ID pour Microsoft Sentinel permet d’ingérer, via 
     Classeur :  2
 
 
-## 2 Prérequis  
+## 2. Prérequis  
 
 - Une licence ID de charge de travail Microsoft Entra Premium (Microsoft Entra Workload ID Premium) est requise pour pouvoir envoyer les journaux AADRiskyServicePrincipals et ADServicePrincipalRiskEvents vers Microsoft Sentinel.   
 - Une licence Microsoft Entra ID P1 ou P2 est nécessaire pour ingérer les journaux de connexion dans Microsoft Sentinel. Toute licence Microsoft Entra ID (gratuite/O365/P1/P2) est suffisante pour ingérer les autres types de journaux. D’autres frais par gigaoctet peuvent s’appliquer à Azure Monitor (Log Analytics) et à Microsoft Sentinel. 
