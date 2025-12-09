@@ -1,7 +1,8 @@
-# Procédure d’embarquement de Microsoft Entra ID dans Sentinel
+# Procédure d’embarquement de Microsoft Entra ID dans Sentinel  
 
-Version 1.0
-Date : 2025-12-08
+**Version** 1.0  
+**Date** : 2025-12-08
+
 
 ## Table des matières
 1. Description de la solution Microsoft Entra ID  
@@ -124,6 +125,16 @@ MicrosoftGraphActivityLogs
 EnrichedOffice365AuditLogs  
 RemoteNetworkHealthLogs  
 
+
+#### Exemple KQL:
+
+Voici un exemple de KQL pour afficher un échantillon des journaux de la table SigninLogs. 
+
+```
+SigninLogs
+| where TimeGenerated >= ago(30m)
+| take 50
+```
 
 ## 7. Sources  
 
