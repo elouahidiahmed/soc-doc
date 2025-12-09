@@ -7,7 +7,6 @@
 **Date de production** : 2025-12-08  
 **Date de mise à jour** : 2025-12-09
 
-
 <br>
 <br>
 
@@ -20,16 +19,19 @@
 6. [ Validation ](#6-validation)
 7. [Sources](#7-sources) 
 
+<br>
+<br>
+
 
 ## 1. Description de la solution Microsoft Entra ID  
 La solution Microsoft Entra ID pour Microsoft Sentinel permet d’ingérer, via les paramètres de diagnostic, les journaux Microsoft Entra ID suivants dans Microsoft Sentinel : Audit, Connexions (Sign-in), Provisionnement, Événements de risque et Utilisateurs/Principaux de service à risque.
 
 ### Contenu de la solution Microsoft Entra ID :  
-    Data Connectors: 1,   
-    Workbooks: 2,   
-    Analytic Rules: 63,    
-    Playbooks: 11,   
-    Classeur : 2  
+    Data Connectors: 1 
+    Workbooks: 2   
+    Analytic Rules: 63   
+    Playbooks: 11 
+    Classeur :  
 
 
 ## 2 Prérequis  
