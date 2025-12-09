@@ -66,7 +66,7 @@ Le connecteur n’est pas installé par défaut, mais il est inclus dans la solu
 - Allez dans : Sentinel > Gestion de contenu > Content Hub, 
 - Cherchez et installer la solution: Microsoft Entra ID
 
-![alt text](installation-solution-entraid.png)
+![alt text](images/installation-solution-entraid.png)
 
 
 ## 5. Activation du connecteur   
@@ -79,7 +79,7 @@ Afin de pouvoir configurer le connecteur, veuillez suivre les étapes suivantes:
 > La section contient une description du connecteur et elle contient la liste des types de logs couverts et les statistiques des données ingérés. Cela permettra aussi de valider la configuration lorsque le connecteur sera activé. 
 
 
-![alt text](activation-connecteur-entraid.png)
+![alt text](images/activation-connecteur-entraid.png)
 
 - Cliquez sur Open connector page.
 
@@ -94,11 +94,11 @@ Accès requis pour configurer le connecteur :
 
 - Il faudrait sélectionner les logs à couvrir et cliquer sur Apply change
 
-![alt text](page-connecteur-entra-id.png)
+![alt text](images/page-connecteur-entra-id.png)
 
 > Après activation du connecteur, une règle est ajoutée automatiquement pour l’envoi des logs depuis Entra Diagnostic settings vers Sentinel:
 
-![alt text](règle-diagnostic-setting-entraid.png)
+![alt text](images/règle-diagnostic-setting-entraid.png)
 
 
 ## 6. Validation   
