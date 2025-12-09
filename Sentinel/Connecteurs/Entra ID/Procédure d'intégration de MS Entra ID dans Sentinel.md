@@ -145,6 +145,8 @@ SigninLogs
 | take 50
 ```
 
+On peut appliquer la même requête sur les autres tables en remplaçant _SigninLogs_ par le nom de la table à vérifier.
+
 ## 7. Sources  
 
 
