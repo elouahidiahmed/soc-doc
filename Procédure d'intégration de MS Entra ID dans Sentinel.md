@@ -80,5 +80,52 @@ Afin de pouvoir configurer le connecteur, veuillez suivre les étapes suivantes:
 
 
 ![alt text](activation-connecteur-entraid.png)
+
+- Cliquez sur Open connector page.
+
+> La page du connecteur affiche les prérequis pour l’activation du connecteur et la possibilité de choisir les logs à envoyer vers Sentinel
+
+Accès requis pour configurer le connecteur :
+| Espace | Permissions | 
+| ------ | ----------- |
+| Workspace | Lecture et écriture |
+| Diagnostic Settings | Lecture et écriture Microsoft Entra ID diagnostic settings |
+| Tenant | 'Global Administrator' ou  'Security Administrator' sur le locataire contenant le workspace |
+
+- Il faudrait sélectionner les logs à couvrir et cliquer sur Apply change
+
+![alt text](page-connecteur-entra-id.png)
+
+> Après activation du connecteur, une règle est ajoutée automatiquement pour l’envoi des logs depuis Entra Diagnostic settings vers Sentinel:
+
+![alt text](règle-diagnostic-setting-entraid.png)
+
+
 ## 6. Validation   
+### Méthode 1 : 
+Depuis Sentinel > Configuration > Connecteurs de données, On peut afficher les statistiques des données ingérés en cliquant le connecteur : Microsoft Entra ID.
+
+### Méthode 2 :
+À partir de Sentinel > Logs, faire une requête KQL pour afficher le contenu des tables suivantes:
+
+>SigninLogs  
+AuditLogs  
+AADNonInteractiveUserSignInLogs  
+AADServicePrincipalSignInLogs  
+AADManagedIdentitySignInLogs  
+AADProvisioningLogs  
+ADFSSignInLogs  
+AADUserRiskEvents  
+AADRiskyUsers  
+NetworkAccessTraffic  
+AADRiskyServicePrincipals  
+AADServicePrincipalRiskEvents  
+MicrosoftGraphActivityLogs  
+EnrichedOffice365AuditLogs  
+RemoteNetworkHealthLogs  
+
+
 ## 7. Sources  
+
+
+https://learn.microsoft.com/en-us/azure/sentinel/connect-azure-active-directory 
