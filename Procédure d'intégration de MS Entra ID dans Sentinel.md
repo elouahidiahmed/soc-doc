@@ -66,11 +66,19 @@ Le connecteur n’est pas installé par défaut, mais il est inclus dans la solu
 - Allez dans : Sentinel > Gestion de contenu > Content Hub, 
 - Cherchez et installer la solution: Microsoft Entra ID
 
+![alt text](installation-solution-entraid.png)
+
 
 ## 5. Activation du connecteur   
 
-![alt text](image.png)
+Après installation de la solution Microsoft Entra ID dans Sentinel, le connecteur Microsoft Entra ID est ajouté dans la liste des connecteurs. 
+Afin de pouvoir configurer le connecteur, veuillez suivre les étapes suivantes:
+- Rendez-vous dans : Sentinel > Configuration > Connecteur de données
+- Sélectionnez le Connecteur pour afficher ses détails  
+
+> La section contient une description du connecteur et elle contient la liste des types de logs couverts et les statistiques des données ingérés. Cela permettra aussi de valider la configuration lorsque le connecteur sera activé. 
 
 
+![alt text](activation-connecteur-entraid.png)
 ## 6. Validation   
 ## 7. Sources  
