@@ -31,7 +31,7 @@ La solution Microsoft Entra ID pour Microsoft Sentinel permet d’ingérer, via 
     Workbooks: 2   
     Analytic Rules: 63   
     Playbooks: 11 
-    Classeur :  
+    Classeur :  2
 
 
 ## 2 Prérequis  
