@@ -89,7 +89,8 @@ Afin de pouvoir configurer le connecteur, veuillez suivre les étapes suivantes:
 
 > La page du connecteur affiche les prérequis pour l’activation du connecteur et la possibilité de choisir les logs à envoyer vers Sentinel
 
-Accès requis pour configurer le connecteur :
+### Accès requis pour configurer le connecteur :
+
 | Espace | Permissions | 
 | ------ | ----------- |
 | Workspace | Lecture et écriture |
