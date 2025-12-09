@@ -5,13 +5,13 @@
 
 
 ## Table des matières
-1. Description de la solution Microsoft Entra ID  
-2. Prérequis   
-3. Types de données du connecteur de données Microsoft Entra ID  	
-4. Étapes d’installation   
-5. Activation du connecteur   
-6. Validation   
-7. Sources   
+1. [Description de la solution Microsoft Entra ID](#1-description-de-la-solution-microsoft-entra-id)   
+2. [ Prérequis ](#2-prérequis) 
+3. [Types de données du connecteur de données Microsoft Entra ID](#3-types-de-données-du-connecteur-de-données-microsoft-entra-id)  	
+4. [Étapes d’installation](#4-étapes-dinstallation)  
+5. [Activation du connecteur](#5-activation-du-connecteur)  
+6. [ Validation ](#6-validation)
+7. [Sources](#7-sources) 
 
 
 ## 1. Description de la solution Microsoft Entra ID  
@@ -25,9 +25,9 @@ La solution Microsoft Entra ID pour Microsoft Sentinel permet d’ingérer, via 
     Classeur : 2  
 
 
+## Prérequis 
 
-
-## 2. Prérequis  
+## 2 Prérequis  
 
 - Une licence ID de charge de travail Microsoft Entra Premium (Microsoft Entra Workload ID Premium) est requise pour pouvoir envoyer les journaux AADRiskyServicePrincipals et ADServicePrincipalRiskEvents vers Microsoft Sentinel.   
 - Une licence Microsoft Entra ID P1 ou P2 est nécessaire pour ingérer les journaux de connexion dans Microsoft Sentinel. Toute licence Microsoft Entra ID (gratuite/O365/P1/P2) est suffisante pour ingérer les autres types de journaux. D’autres frais par gigaoctet peuvent s’appliquer à Azure Monitor (Log Analytics) et à Microsoft Sentinel. 
@@ -103,6 +103,7 @@ Accès requis pour configurer le connecteur :
 
 
 ## 6. Validation   
+
 ### Méthode 1 : 
 Depuis Sentinel > Configuration > Connecteurs de données, On peut afficher les statistiques des données ingérés en cliquant le connecteur : Microsoft Entra ID.
 
