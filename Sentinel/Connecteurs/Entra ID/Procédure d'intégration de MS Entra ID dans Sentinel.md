@@ -1,8 +1,13 @@
 # Procédure d’embarquement de Microsoft Entra ID dans Sentinel  
+<br>
+<br>
+
 
 **Version** 1.0  
 **Date** : 2025-12-08
 
+<br>
+<br>
 
 ## Table des matières
 1. [Description de la solution Microsoft Entra ID](#1-description-de-la-solution-microsoft-entra-id)   
@@ -24,8 +29,6 @@ La solution Microsoft Entra ID pour Microsoft Sentinel permet d’ingérer, via 
     Playbooks: 11,   
     Classeur : 2  
 
-
-## Prérequis 
 
 ## 2 Prérequis  
 
