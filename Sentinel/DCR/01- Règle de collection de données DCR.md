@@ -34,8 +34,8 @@ Les DCRAs établissent le lien entre une DCR et une ressource. Comme la relation
 
 ``` mermaid
 
-flowchart LR
-    subgraph DCRAs
+flowchart TB
+    subgraph DCRAs 
         Ressource <--> DCRA <--> DCR
     end
 
