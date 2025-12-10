@@ -20,3 +20,22 @@ Pour afficher les DCR existantes, allez dans:
 Azure > Monitor > Settings > Data Collection Rules 
 
 ![alt text](images/01-dcr%20sur%20azure%20monitor.png)
+
+## Processus de collecte des données
+
+Les DCR définissent comment Azure Monitor doit traiter les données entrantes : quelles données collecter, leur format, les transformations éventuelles et la destination d’ingestion. Elles fournissent un pipeline de traitement unifié pour tous les scénarios de collecte.
+
+![alt text](images/01-processus-collecte-dcr.png)
+
+
+## Associations des règles de collecte des données (DCRA)
+
+Les DCRAs établissent le lien entre une DCR et une ressource. Comme la relation est many-to-many, une DCR peut servir plusieurs ressources et une ressource peut utiliser plusieurs DCR (jusqu’à 30).
+
+``` mermaid
+
+flowchart LR
+    subgraph DCRA
+        Ressource <--> Dev <--> VSCode
+    end
+```
