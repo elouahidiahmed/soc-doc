@@ -41,8 +41,8 @@ flowchart TB
 
 style DCRAs fill:#3350aa,stroke:#fff,stroke-width:1px
 
-style Ressource color:#000, fill:#fff, stroke:#fff
-style DCRA     color:#000, fill:#fff, stroke:#fff
-style DCR      color:#000, fill:#fff, stroke:#fff
+style Ressource color:#fff, fill:#fff, stroke:#fff
+style DCRA     color:#fff, fill:#fff, stroke:#fff
+style DCR      color:#fff, fill:#fff, stroke:#fff
 
 ```
