@@ -39,10 +39,10 @@ flowchart TB
         Ressource <--> DCRA <--> DCR
     end
 
-style DCRAs fill:#3350aa,stroke:#fff,stroke-width:1px
+style DCRAs color:#fff,fill:#3350aa,stroke:#fff,stroke-width:1px
 
-style Ressource color:#fff, fill:#fff, stroke:#fff
-style DCRA     color:#fff, fill:#fff, stroke:#fff
-style DCR      color:#fff, fill:#fff, stroke:#fff
+style Ressource color:#333, fill:#fff, stroke:#fff
+style DCRA     color:#333, fill:#fff, stroke:#fff
+style DCR      color:#333, fill:#fff, stroke:#fff
 
 ```
