@@ -36,6 +36,6 @@ Les DCRAs établissent le lien entre une DCR et une ressource. Comme la relation
 
 flowchart LR
     subgraph DCRA
-        Ressource <--> Dev <--> VSCode
+        Ressource <--> DCRA <--> DCR
     end
 ```
