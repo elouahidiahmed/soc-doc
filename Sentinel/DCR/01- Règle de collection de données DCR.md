@@ -77,3 +77,23 @@ Azure Monitor peut ingérer des données provenant d’Event Hubs. À la récept
 
 ![alt text](images/01-event-hub-dcr-azure-monitor.png)
 
+### Métriques des plateformes
+Les métriques de plateforme Azure sont collectées automatiquement. Une DCR peut désormais rediriger ces métriques vers Log Analytics pour une analyse avancée via KQL, remplaçant ainsi l’usage traditionnel des diagnostic settings.
+
+![alt text](images/01-platform-metrics.png)
+
+### Direct ingestion
+
+En ingestion directe, chaque requête API désigne explicitement la DCR responsable du traitement. La DCR valide la structure des données, applique les transformations nécessaires et dirige l’ingestion vers le workspace et la table cibles.
+
+![alt text](images/01-direct-ingestion-dcr.png)
+
+
+### Workspace transformation DCR
+Les workspace-transformation-DCRs permettent d’appliquer des transformations aux données entrant dans un Log Analytics workspace, même lorsque la source n’utilise pas de DCR. Une fois créées, elles s’activent automatiquement.
+
+![alt text](images/01-workspace-transformation-dcr.png)
+
+
+
+## Transformations
