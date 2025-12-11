@@ -97,3 +97,21 @@ Les workspace-transformation-DCRs permettent d’appliquer des transformations a
 
 
 ## Transformations
+
+Les transformations KQL appliquées via une DCR modifient les données avant leur stockage. Elles servent à filtrer, anonymiser, reformater ou enrichir les données, et permettent des scénarios avancés comme l’ingestion multi-destinations.
+
+![alt text](images/01-drc-transformations.png)
+
+
+
+## Azure Monitor pipeline
+Le pipeline Azure Monitor permet de collecter et router la télémétrie à grande échelle dans un datacenter local avant son envoi au cloud. Il répond à trois besoins :
+
+haute scalabilité,
+
+connectivité intermittente (cache + synchronisation différée),
+
+réseaux segmentés où l’accès direct au cloud n’est pas possible.
+
+![alt text](images/01-azure-monitor-pipeline.png)
+
