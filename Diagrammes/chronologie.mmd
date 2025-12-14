@@ -1,0 +1,11 @@
+%% Visualisation simple du cycle des branches
+gitGraph
+   commit id:"Commit initial"
+   branch feature
+   checkout feature
+   commit id:"Travail 1"
+   commit id:"Travail 2"
+   checkout main
+   commit id:"Correctif rapide (hotfix)"
+   merge feature id:"Fusion de la branche feature"
+   commit id:"Release"
