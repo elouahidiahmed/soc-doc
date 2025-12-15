@@ -1,23 +1,37 @@
 flowchart TD
     %% --- Opérations de base ---
-    A[git clone<br><small>Cloner un dépôt distant</small>] --> B[git checkout -b feature<br><small>Créer et basculer vers une nouvelle branche</small>]
+    A["git clone
+    Cloner un dépôt distant"] --> B["git checkout -b feature
+    Créer et basculer vers une nouvelle branche"]
 
-    B --> C[git add .<br><small>Ajouter les fichiers modifiés à l'index</small>]
-    C --> D[git commit -m "message"<br><small>Valider (commiter) les modifications</small>]
-    D --> E[git push origin feature<br><small>Pousser la branche vers le dépôt distant</small>]
+    B --> C["git add .
+    Ajouter les fichiers modifiés à l'index"]
+    C --> D["git commit -m 'message'
+    Valider (commiter) les modifications"]
+    D --> E["git push origin feature
+    Pousser la branche vers le dépôt distant"]
 
     %% --- Revue et intégration ---
-    E --> F[Pull Request / Merge Request<br><small>Proposer l'intégration du code</small>]
+    E --> F["Pull Request / Merge Request
+    Demander la revue et l'intégration du code"]
 
     %% --- Mise à jour de la branche principale ---
-    F --> G[git checkout main<br><small>Retourner sur la branche principale</small>]
-    G --> H[git pull<br><small>Récupérer les dernières mises à jour du dépôt distant</small>]
-    H --> I[git merge feature<br><small>Fusionner la branche feature dans main</small>]
+    F --> G["git checkout main
+    Revenir sur la branche principale"]
+    G --> H["git pull
+    Récupérer les dernières modifications du dépôt distant"]
+    H --> I["git merge feature
+    Fusionner la branche feature dans main"]
 
-    I --> J[git push origin main<br><small>Publier la branche principale mise à jour</small>]
+    I --> J["git push origin main
+    Publier la branche principale mise à jour"]
 
     %% --- Opérations courantes supplémentaires ---
-    C --> K[git restore <file><br><small>Annuler les modifications non indexées</small>]
-    D --> L[git commit --amend<br><small>Modifier le dernier commit</small>]
-    G --> M[git fetch<br><small>Récupérer les références distantes sans modifier la branche</small>]
-    M --> N[git rebase origin/main<br><small>Ré-aligner la branche sur la dernière version</small>]
+    C --> K["git restore fichier
+    Annuler les modifications locales sur un fichier"]
+    D --> L["git commit --amend
+    Modifier le dernier commit"]
+    G --> M["git fetch
+    Récupérer les mises à jour distantes sans les fusionner"]
+    M --> N["git rebase origin/main
+    Ré-aligner la branche sur la dernière version de main"]
